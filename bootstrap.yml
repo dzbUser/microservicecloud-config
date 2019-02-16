@@ -1,14 +1,10 @@
 spring:
-  profiles:
-    active:
-    - dev
----
-spring:
-  profile:dev
-  application:
-    name:microservicecloud-config-atguigu-dev
----
-spring:
-  profile:test
-  application:
-    name:microservicecloud-config-atguigu-test
+  application: 
+    name: service-user
+  cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        service-id: service-config
+      profile: dev
+      label: master
