@@ -4,11 +4,11 @@ spring:
     - dev
 ---
 spring:
-  profiles:
-  application:dev
+  profiles:dev
+  application:
     name:microservicecloud-config-atguigu-dev
 ---
 spring:
-  profiles:
-  application:test
+  profiles:test
+  application:
     name:microservicecloud-config-atguigu-test
